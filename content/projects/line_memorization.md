@@ -1,6 +1,6 @@
 +++
 title = "Line Memorization"
-description = 'A web app to help with memorizing lines, built using HTML5 APIs and the [Svelte](https://svelte.dev/) UI framework.'
+description = 'A web app to help with memorizing lines, built using HTML5 APIs and the Svelte UI framework.'
 draft = true
 +++
 

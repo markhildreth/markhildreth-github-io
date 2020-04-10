@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	font-family: "Lora", "Times New Roman", serif;
+}
+
 .container {
 	@apply w-full m-auto;
-	max-width: 800px;
+	max-width: 740px;
 }
 
 p {
-	font-family: "Lora", "Times New Roman", serif;
+	line-height: 1.5;
+	@apply mb-8 text-lg;
 }
 
 h1,h2,h3,h4,h5,h6 {
