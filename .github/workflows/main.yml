@@ -1,0 +1,13 @@
+on: push
+name: Build and deploy to primary repo
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Zola
+      uses: ./.github/actions/build_zola
+      env:
+              TOKEN: ${{ secrets.TOKEN }}
