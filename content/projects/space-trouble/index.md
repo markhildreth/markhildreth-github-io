@@ -34,6 +34,10 @@ communication with the others.
 
 ## Implementation
 
+{% thumbnail(path="wiring.png" alt="Image of Inside of Box Wiring", width=200) %}
+The wiring on the inside of the box.
+{% end %}
+
 The prototype panel has been implemented using a [Feather M0](https://www.adafruit.com/product/2772)
 development board. The software itself is implemented in Rust, and the source code can be found in
 [this GitHub repo](https://github.com/markhildreth/space_trouble).

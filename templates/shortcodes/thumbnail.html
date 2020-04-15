@@ -1,6 +1,6 @@
-<div class="w-9/12 m-auto mb-8">
-  <a href="{{ path }}">
-    <img class="w-full m-auto" alt="{{alt}}" src="{{ resize_image(path=page.path ~ path, width=width, op="fit_width") }}"></img>
+<div class="w-9/12 mb-8 mx-auto flex flex-col items-center">
+  <a class="mb-2" href="{{ path }}">
+    <img class="m-auto" width="{{ width }}" alt="{{alt}}" src="{{ resize_image(path=page.path ~ path, width=width, op="fit_width") }}"></img>
   </a>
   <small>
     {{ body }}

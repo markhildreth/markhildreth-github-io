@@ -7287,6 +7287,7 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5rem;
 }
 
 section h1 {
@@ -7312,7 +7313,7 @@ a {
 
 small {
   display: inline-block;
-  font-size: 75%;
+  font-size: 80%;
   line-height: normal;
 }
 
