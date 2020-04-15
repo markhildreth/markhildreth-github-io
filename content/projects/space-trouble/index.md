@@ -17,9 +17,9 @@ smoothly.
 {% thumbnail(path="panel.png" alt="Picture of panel", width=600) %}
   Prototype panel. One thing I learned from the prototype is that the buttons I
   use on the left have built-in debouncing, but sometimes require more effort
-  than expected to push. The final panel will most likely have an LED next to the
-  buttons to give feedback to the user that the button was pressed enough to
-  register.
+  than expected to register a "push". The final panel will most likely have an
+  LED next to the buttons to give feedback to the user that the button was
+  pressed enough to register.
 {% end %}
 
 The catch is that although your panel's screen might be telling you to "Enable the Gelatinous
