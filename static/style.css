@@ -7269,6 +7269,10 @@ video {
   transition-duration: 1000ms;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Lora", "Times New Roman", serif;
 }
