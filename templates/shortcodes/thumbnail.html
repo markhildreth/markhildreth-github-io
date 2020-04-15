@@ -1,8 +1,16 @@
-<div class="w-9/12 mb-8 mx-auto flex flex-col items-center">
-  <a class="mb-2" href="{{ path }}">
-    <img class="m-auto" width="{{ width }}" alt="{{alt}}" src="{{ resize_image(path=page.path ~ path, width=width, op="fit_width") }}"></img>
-  </a>
-  <small>
-    {{ body }}
-  </small>
+{% if position == "left" %}
+<div class="float-left mr-4">
+{% elif position == "right" %}
+<div class="float-right ml-4">
+{% else %}
+<div class="w-9/12 mx-auto">
+{% endif %}
+  <div class="mb-8 flex flex-col items-center">
+    <a class="mb-2" href="{{ path }}">
+      <img class="m-auto" width="{{ width }}" alt="{{alt}}" src="{{ resize_image(path=page.path ~ path, width=width, op="fit_width") }}"></img>
+    </a>
+    <small>
+      {{ body }}
+    </small>
+  </div>
 </div>
