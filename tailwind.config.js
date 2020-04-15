@@ -1,12 +1,11 @@
-const colors = require('tailwindcss/defaultTheme');
 module.exports = {
   corePlugins: {
     container: false
   },
   theme: {
     colors: {
-      black: colors.black,
-      white: colors.white,
+      black: '#000000',
+      white: '#ffffff',
       gray: {
         '100': '#f5f5f5',
         '200': '#eeeeee',
