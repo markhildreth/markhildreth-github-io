@@ -7267,8 +7267,31 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+section h1 {
+  font-size: 250%;
+}
+
+section h2 {
+  font-size: 175%;
+}
+
 a {
   text-decoration: underline;
+}
+
+.anchor-link {
+  visibility: hidden;
+  color: #757575;
+}
+
+:hover > .anchor-link {
+  visibility: visible;
+}
+
+small {
+  display: inline-block;
+  font-size: 75%;
+  line-height: normal;
 }
 
 @media (min-width: 640px) {
