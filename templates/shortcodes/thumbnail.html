@@ -1,9 +1,9 @@
 {% if position == "left" %}
-<div class="float-left mr-4">
+<div class="md:float-left md:mr-4">
 {% elif position == "right" %}
-<div class="float-right ml-4">
+<div class="md:float-right md:ml-4">
 {% else %}
-<div class="w-9/12 mx-auto">
+<div>
 {% endif %}
   <div class="mb-8 flex flex-col items-center">
     <a class="mb-2" href="{{ path }}">

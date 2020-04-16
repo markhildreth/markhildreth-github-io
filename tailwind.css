@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-	@apply w-full m-auto;
+	@apply w-full m-auto px-4;
 	max-width: 740px;
 }
 
@@ -22,7 +22,6 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	@apply mb-2;
 }
 
 section h1 {
