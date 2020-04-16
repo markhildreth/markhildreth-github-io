@@ -32,12 +32,32 @@ Currently, I have developed a prototype panel which runs the game in its entiret
 below. The next step will be to create three such panels, each with a module to enable wireless
 communication with the others.
 
+The game flow goes as follows:
+
+* The system is turned on. The user gets a "Press any button to start."
+* The game begins. The user is given directions. If they perform an incorrect input, they lose two
+  hull points. If the timer runs out before performing the input, they lose 4 hull points.
+* The "distance" is constantly increasing, working as a score.
+* When the hull finally hits zero, there is a game over screen showing the score for five seconds.
+* Then the system goes back to "Press any button to start."
+
 ## Implementation
+
 {% thumbnail(path="wiring.png" alt="Image of Inside of Box Wiring", width=200, position="right") %}
 The wiring on the inside of the box.
 {% end %}
 
 The prototype panel has been implemented using a [Feather M0](https://www.adafruit.com/product/2772)
-development board. The software itself is implemented in Rust, and the source code can be found in
-[this GitHub repo](https://github.com/markhildreth/space_trouble).
+development board. The [software](https://github.com/markhildreth/space_trouble) itself is
+implemented in Rust.
 
+Some general ideas regarding programming this in Rust:
+
+* Early on, there were some hickups getting the item to upload. I think this is because, despite the
+  fact that the Feather M0 is a well-supported board, some of the documentation for it is copy-paste
+  and led me down a rabbit hole to try to upload using the wrong instructions. Once this was
+  resolved, it was pretty cake.
+* The Rust crates out there split between using hal-embedded and not, but the ones that do make it
+  easy to put stuff together.
+* Once I hit a point where I was able to constantly get things working, I found that I was able to
+  do massive refactorings until I compiled, plug it in, and things "just worked."

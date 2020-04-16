@@ -10,26 +10,30 @@ body {
 	font-family: "Lora", "Times New Roman", serif;
 }
 
+h1,h2,h3,h4,h5,h6 {
+       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav a {
+       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+	line-height: 1.5;
+	@apply mb-4;
+}
+
 .container {
 	@apply w-full m-auto px-4;
 	max-width: 740px;
 }
 
-p {
-	line-height: 1.5;
-	@apply mb-8 text-lg;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 section h1 {
-	font-size: 250%;
+	@apply text-4xl;
 }
 
 section h2 {
-	font-size: 175%;
+	@apply text-2xl;
 }
 
 a {
@@ -38,7 +42,7 @@ a {
 
 .anchor-link {
 	visibility: hidden;
-	@apply text-gray-600;
+	@apply text-gray-500 ml-2;
 }
 
 :hover > .anchor-link {
@@ -47,6 +51,12 @@ a {
 
 small {
 	display: inline-block;
-	font-size: 80%;
+	@apply text-xs;
 	line-height: normal;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 2rem;
+	@apply mb-4;
 }
