@@ -4,11 +4,11 @@ description = 'A "Space Team" inspired game, written using Rust and a Feather M0
 +++
 
 # Space Trouble
-
-"Space Trouble" is in development as a game to be played during a space-themed party (unfortunately
-delayed until after the Coronovirus apocalypse). It is my way of learning embedded development past
-the quick examples seen on Arduino tutorial projects. The project itself takes inspiration from the
-party game app [Space Team](https://spaceteam.ca/).
+["Space Trouble"](https://github.com/markhildreth/space_trouble) is in development as a game to be
+played during a space-themed party (unfortunately delayed until after the Coronovirus apocalypse).
+It is my way of learning embedded development past the quick examples seen on Arduino tutorial
+projects. The project itself takes inspiration from the party game app [Space
+Team](https://spaceteam.ca/).
 
 The idea of Space Trouble is that each of three players has in front of them a panel of buttons and
 knobs, along with a screen instructing them what control needs twiddling to keep the ship sailing
@@ -55,8 +55,8 @@ Some general ideas regarding programming this in Rust:
 
 * Early on, there were some hickups getting the item to upload. I think this is because, despite the
   fact that the Feather M0 is a well-supported board, some of the documentation for it is copy-paste
-  and led me down a rabbit hole to try to upload using the wrong instructions. Once this was
-  resolved, it was pretty cake.
+  and led me down a rabbit hole to try to upload using different boot loader instructions. I'm
+  trying to verify that this is the case and will create an issue if that is the case.
 * The Rust crates out there split between using hal-embedded and not, but the ones that do make it
   easy to put stuff together.
 * Once I hit a point where I was able to constantly get things working, I found that I was able to
