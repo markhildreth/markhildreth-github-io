@@ -1,14 +1,17 @@
 +++
 title = "Space Trouble"
 description = 'A "Space Team" inspired game, written using Rust and a Feather M0.'
+weight = 0
 +++
 
 # Space Trouble
-["Space Trouble"](https://github.com/markhildreth/space_trouble) is in development as a game to be
-played during a space-themed party (unfortunately delayed until after the Coronovirus apocalypse).
-It is my way of learning embedded development past the quick examples seen on Arduino tutorial
-projects. The project itself takes inspiration from the party game app [Space
-Team](https://spaceteam.ca/).
+
+* [GitHub](https://github.com/markhildreth/space_trouble)
+
+"Space Trouble is in development as a game to be played during a space-themed party (unfortunately
+delayed until after the Coronovirus apocalypse).  It is my way of learning embedded development past
+the quick examples seen on Arduino tutorial projects. The project itself takes inspiration from the
+party game app [Space Team](https://spaceteam.ca/).
 
 The idea of Space Trouble is that each of three players has in front of them a panel of buttons and
 knobs, along with a screen instructing them what control needs twiddling to keep the ship sailing
