@@ -28,14 +28,6 @@ p {
 	max-width: 740px;
 }
 
-section h1 {
-	@apply text-4xl;
-}
-
-section h2 {
-	@apply text-2xl;
-}
-
 a {
 	@apply underline;
 }
