@@ -56,11 +56,12 @@ implemented in Rust.
 
 Some general ideas regarding programming this in Rust:
 
-* Early on, there were some hickups getting the item to upload. I think this is because, despite the
-  fact that the Feather M0 is a well-supported board, some of the documentation for it is copy-paste
-  and led me down a rabbit hole to try to upload using different boot loader instructions. I'm
-  trying to verify that this is the case and will create an issue if that is the case.
-* The Rust crates out there split between using hal-embedded and not, but the ones that do make it
-  easy to put stuff together.
-* Once I hit a point where I was able to constantly get things working, I found that I was able to
-  do massive refactorings until I compiled, plug it in, and things "just worked."
+* Early on, there were some hickups getting the item to upload. This was because, despite the
+  fact that the Feather M0 is a well-supported board, I had an earlier version that did not
+  end up having the same boot loader as later versions. This led me down a rabbit hole to try to
+  upload using boot loader instructions that would never have worked for my device. I ended up
+  [updating the documentation](https://github.com/atsamd-rs/atsamd/commit/011ba2b71822553f08880def71147a407ccdca8e) for this.
+* The Rust crates out there split between using hal-embedded and not, but the ones that do use
+  `hal-embedded`i make it easier to put stuff together.
+* Once I hit a point where I was able to constantly get things compiled/uploaded, I found that I was
+  able to do massive refactorings until I compiled, plug it in, and things "just worked."
