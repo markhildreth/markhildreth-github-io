@@ -1,16 +1,15 @@
 {% if position == "left" %}
-<div class="md:float-left md:mr-4">
+<div class="thumbnail float-left">
 {% elif position == "right" %}
-<div class="md:float-right md:ml-4">
+<div class="thumbnail float-right">
 {% else %}
-<div>
+<div class="thumbnail">
 {% endif %}
-  <div class="mb-8 flex flex-col items-center">
-    <a class="mb-2" href="{{ path }}">
-      <img class="m-auto" width="{{ width }}" alt="{{alt}}" src="{{ resize_image(path=page.path ~ path, width=width, op="fit_width") }}"></img>
+  {% set image = resize_image(path=page.path ~ path, width=width, op='fit_width') %}
+    <a href="{{ path }}">
+      <img width="{{ width }}" alt="{{alt}}" src="{{ image.url }}"></img>
     </a>
     <small>
       {{ body }}
     </small>
-  </div>
 </div>
